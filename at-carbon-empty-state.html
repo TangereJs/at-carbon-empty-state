@@ -1,0 +1,112 @@
+<link rel="import" href="../tangere/tangere.html">
+<link rel="import" href="../at-carbon-icon/at-carbon-icon.html">
+<link rel="import" href="../at-theme/at-theme.html">
+
+<dom-module id="at-carbon-empty-state">
+  <template>
+
+    <style>
+      :host {
+        display: block;
+      }
+
+      .hide {
+        display: none;
+      }
+
+      #msg {
+        padding: 8px;        
+      }
+
+      #container {
+        width: 100%;
+      }
+      
+      #icon, #msg {
+        color: var(--disabled-text-color);
+        @apply(--paper-font-body2);
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+      }
+      
+      #icon {
+        width:160px;
+        height:160px;
+      }
+
+    </style>
+    
+    <div id="container">
+      <at-carbon-icon id="icon" icon="{{icon}}"></at-carbon-icon>
+      <div id="msg"></div>
+    </div>
+  </template>
+</dom-module>
+
+<script>
+  Polymer({
+    is: 'at-carbon-empty-state',
+    properties: {
+      icon: {
+        type: String,
+        value: "now:error"
+      },
+
+      html: {
+        type: String,
+        value: "",
+        observer: 'htmlChanged'
+      }
+    },
+    htmlChanged: function () {
+      this.render();
+    },
+    ready: function () {
+      this.render();
+    },
+    render: function () {
+
+      // get innerHTML from lightDom
+      var msg = this._nodesInnerHTML(Polymer.dom(this).childNodes).trim();
+
+      if (!!this.html) msg = this.html;
+
+      var container = this.$.msg;
+      container.innerHTML = msg;
+
+      var cl = this.type;
+
+      // hide container if empty
+      if (!msg) cl = "hide";
+
+      if (this._cl !== undefined) {
+        Polymer.dom(this.$.msg).classList.toggle(this._cl, false);
+      }
+
+      Polymer.dom(this.$.msg).classList.toggle(cl, true);
+      this._cl = cl;
+    },
+    ready: function () {
+
+    },
+    _nodesInnerHTML: function (nodes) {
+      // generates combined innerHTML of an array of nodes
+      var html = "";
+      for (var i = 0, ii = nodes.length; i < ii; i++) {
+        var node = nodes[i];
+
+        // text node
+        if (node.nodeType == 3) html += node.textContent;
+
+        // html node
+        if (node.nodeType == 1) html += node.outerHTML;
+
+      }
+
+      return html;
+    }
+
+
+  });
+</script>
