@@ -1,7 +1,7 @@
 {
   "name": "at-carbon-empty-state",
   "private": true,
-  "version": "0.0.1.15",
+  "version": "0.0.1.16",
   "dependencies": {
     "tangere": "TangereJs/tangere#master",
     "at-doc-viewer": "TangereJs/at-doc-viewer#master",
