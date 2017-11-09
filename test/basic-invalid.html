@@ -1,0 +1,2003 @@
+<!doctype html>
+<html>
+  <head>
+  <meta charset="UTF-8">
+  <title>at-carbon-empty-state tests</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+  <script src="../../web-component-tester/browser.js"></script>
+  <link rel="import" href="../at-carbon-empty-state.html">
+  <link rel="import" href="../../iron-test-helpers/iron-test-helpers.html" />
+  </head>
+  <body>
+    <test-fixture id="iconNotset_htmlNotset">
+      <template>
+        <at-carbon-empty-state></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconNotset_htmlUndefined">
+      <template>
+        <at-carbon-empty-state html="undefined"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconNotset_htmlNull">
+      <template>
+        <at-carbon-empty-state html="null"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconNotset_htmlTrue">
+      <template>
+        <at-carbon-empty-state html="true"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconNotset_htmlFalse">
+      <template>
+        <at-carbon-empty-state html="false"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconNotset_html-42">
+      <template>
+        <at-carbon-empty-state html="-42"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconNotset_html0">
+      <template>
+        <at-carbon-empty-state html="0"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconNotset_html42">
+      <template>
+        <at-carbon-empty-state html="42"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconNotset_htmlEmpty">
+      <template>
+        <at-carbon-empty-state html=""></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconNotset_htmlLorem ipsum">
+      <template>
+        <at-carbon-empty-state html="lorem ipsum"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconNotset_html{}">
+      <template>
+        <at-carbon-empty-state html="{}"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconNotset_html[]">
+      <template>
+        <at-carbon-empty-state html="[]"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconNotset_htmlFunction">
+      <template>
+        <at-carbon-empty-state html="function f() { return undefined; }"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconUndefined_htmlNotset">
+      <template>
+        <at-carbon-empty-state icon="undefined"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconUndefined_htmlUndefined">
+      <template>
+        <at-carbon-empty-state icon="undefined" html="undefined"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconUndefined_htmlNull">
+      <template>
+        <at-carbon-empty-state icon="undefined" html="null"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconUndefined_htmlTrue">
+      <template>
+        <at-carbon-empty-state icon="undefined" html="true"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconUndefined_htmlFalse">
+      <template>
+        <at-carbon-empty-state icon="undefined" html="false"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconUndefined_html-42">
+      <template>
+        <at-carbon-empty-state icon="undefined" html="-42"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconUndefined_html0">
+      <template>
+        <at-carbon-empty-state icon="undefined" html="0"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconUndefined_html42">
+      <template>
+        <at-carbon-empty-state icon="undefined" html="42"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconUndefined_htmlEmpty">
+      <template>
+        <at-carbon-empty-state icon="undefined" html=""></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconUndefined_htmlLorem ipsum">
+      <template>
+        <at-carbon-empty-state icon="undefined" html="lorem ipsum"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconUndefined_html{}">
+      <template>
+        <at-carbon-empty-state icon="undefined" html="{}"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconUndefined_html[]">
+      <template>
+        <at-carbon-empty-state icon="undefined" html="[]"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconUndefined_htmlFunction">
+      <template>
+        <at-carbon-empty-state icon="undefined" html="function f() { return undefined; }"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconNull_htmlNotset">
+      <template>
+        <at-carbon-empty-state icon="null"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconNull_htmlUndefined">
+      <template>
+        <at-carbon-empty-state icon="null" html="undefined"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconNull_htmlNull">
+      <template>
+        <at-carbon-empty-state icon="null" html="null"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconNull_htmlTrue">
+      <template>
+        <at-carbon-empty-state icon="null" html="true"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconNull_htmlFalse">
+      <template>
+        <at-carbon-empty-state icon="null" html="false"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconNull_html-42">
+      <template>
+        <at-carbon-empty-state icon="null" html="-42"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconNull_html0">
+      <template>
+        <at-carbon-empty-state icon="null" html="0"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconNull_html42">
+      <template>
+        <at-carbon-empty-state icon="null" html="42"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconNull_htmlEmpty">
+      <template>
+        <at-carbon-empty-state icon="null" html=""></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconNull_htmlLorem ipsum">
+      <template>
+        <at-carbon-empty-state icon="null" html="lorem ipsum"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconNull_html{}">
+      <template>
+        <at-carbon-empty-state icon="null" html="{}"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconNull_html[]">
+      <template>
+        <at-carbon-empty-state icon="null" html="[]"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconNull_htmlFunction">
+      <template>
+        <at-carbon-empty-state icon="null" html="function f() { return undefined; }"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconTrue_htmlNotset">
+      <template>
+        <at-carbon-empty-state icon="true"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconTrue_htmlUndefined">
+      <template>
+        <at-carbon-empty-state icon="true" html="undefined"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconTrue_htmlNull">
+      <template>
+        <at-carbon-empty-state icon="true" html="null"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconTrue_htmlTrue">
+      <template>
+        <at-carbon-empty-state icon="true" html="true"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconTrue_htmlFalse">
+      <template>
+        <at-carbon-empty-state icon="true" html="false"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconTrue_html-42">
+      <template>
+        <at-carbon-empty-state icon="true" html="-42"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconTrue_html0">
+      <template>
+        <at-carbon-empty-state icon="true" html="0"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconTrue_html42">
+      <template>
+        <at-carbon-empty-state icon="true" html="42"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconTrue_htmlEmpty">
+      <template>
+        <at-carbon-empty-state icon="true" html=""></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconTrue_htmlLorem ipsum">
+      <template>
+        <at-carbon-empty-state icon="true" html="lorem ipsum"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconTrue_html{}">
+      <template>
+        <at-carbon-empty-state icon="true" html="{}"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconTrue_html[]">
+      <template>
+        <at-carbon-empty-state icon="true" html="[]"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconTrue_htmlFunction">
+      <template>
+        <at-carbon-empty-state icon="true" html="function f() { return undefined; }"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconFalse_htmlNotset">
+      <template>
+        <at-carbon-empty-state icon="false"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconFalse_htmlUndefined">
+      <template>
+        <at-carbon-empty-state icon="false" html="undefined"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconFalse_htmlNull">
+      <template>
+        <at-carbon-empty-state icon="false" html="null"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconFalse_htmlTrue">
+      <template>
+        <at-carbon-empty-state icon="false" html="true"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconFalse_htmlFalse">
+      <template>
+        <at-carbon-empty-state icon="false" html="false"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconFalse_html-42">
+      <template>
+        <at-carbon-empty-state icon="false" html="-42"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconFalse_html0">
+      <template>
+        <at-carbon-empty-state icon="false" html="0"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconFalse_html42">
+      <template>
+        <at-carbon-empty-state icon="false" html="42"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconFalse_htmlEmpty">
+      <template>
+        <at-carbon-empty-state icon="false" html=""></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconFalse_htmlLorem ipsum">
+      <template>
+        <at-carbon-empty-state icon="false" html="lorem ipsum"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconFalse_html{}">
+      <template>
+        <at-carbon-empty-state icon="false" html="{}"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconFalse_html[]">
+      <template>
+        <at-carbon-empty-state icon="false" html="[]"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconFalse_htmlFunction">
+      <template>
+        <at-carbon-empty-state icon="false" html="function f() { return undefined; }"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="icon-42_htmlNotset">
+      <template>
+        <at-carbon-empty-state icon="-42"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="icon-42_htmlUndefined">
+      <template>
+        <at-carbon-empty-state icon="-42" html="undefined"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="icon-42_htmlNull">
+      <template>
+        <at-carbon-empty-state icon="-42" html="null"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="icon-42_htmlTrue">
+      <template>
+        <at-carbon-empty-state icon="-42" html="true"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="icon-42_htmlFalse">
+      <template>
+        <at-carbon-empty-state icon="-42" html="false"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="icon-42_html-42">
+      <template>
+        <at-carbon-empty-state icon="-42" html="-42"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="icon-42_html0">
+      <template>
+        <at-carbon-empty-state icon="-42" html="0"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="icon-42_html42">
+      <template>
+        <at-carbon-empty-state icon="-42" html="42"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="icon-42_htmlEmpty">
+      <template>
+        <at-carbon-empty-state icon="-42" html=""></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="icon-42_htmlLorem ipsum">
+      <template>
+        <at-carbon-empty-state icon="-42" html="lorem ipsum"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="icon-42_html{}">
+      <template>
+        <at-carbon-empty-state icon="-42" html="{}"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="icon-42_html[]">
+      <template>
+        <at-carbon-empty-state icon="-42" html="[]"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="icon-42_htmlFunction">
+      <template>
+        <at-carbon-empty-state icon="-42" html="function f() { return undefined; }"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="icon0_htmlNotset">
+      <template>
+        <at-carbon-empty-state icon="0"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="icon0_htmlUndefined">
+      <template>
+        <at-carbon-empty-state icon="0" html="undefined"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="icon0_htmlNull">
+      <template>
+        <at-carbon-empty-state icon="0" html="null"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="icon0_htmlTrue">
+      <template>
+        <at-carbon-empty-state icon="0" html="true"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="icon0_htmlFalse">
+      <template>
+        <at-carbon-empty-state icon="0" html="false"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="icon0_html-42">
+      <template>
+        <at-carbon-empty-state icon="0" html="-42"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="icon0_html0">
+      <template>
+        <at-carbon-empty-state icon="0" html="0"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="icon0_html42">
+      <template>
+        <at-carbon-empty-state icon="0" html="42"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="icon0_htmlEmpty">
+      <template>
+        <at-carbon-empty-state icon="0" html=""></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="icon0_htmlLorem ipsum">
+      <template>
+        <at-carbon-empty-state icon="0" html="lorem ipsum"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="icon0_html{}">
+      <template>
+        <at-carbon-empty-state icon="0" html="{}"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="icon0_html[]">
+      <template>
+        <at-carbon-empty-state icon="0" html="[]"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="icon0_htmlFunction">
+      <template>
+        <at-carbon-empty-state icon="0" html="function f() { return undefined; }"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="icon42_htmlNotset">
+      <template>
+        <at-carbon-empty-state icon="42"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="icon42_htmlUndefined">
+      <template>
+        <at-carbon-empty-state icon="42" html="undefined"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="icon42_htmlNull">
+      <template>
+        <at-carbon-empty-state icon="42" html="null"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="icon42_htmlTrue">
+      <template>
+        <at-carbon-empty-state icon="42" html="true"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="icon42_htmlFalse">
+      <template>
+        <at-carbon-empty-state icon="42" html="false"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="icon42_html-42">
+      <template>
+        <at-carbon-empty-state icon="42" html="-42"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="icon42_html0">
+      <template>
+        <at-carbon-empty-state icon="42" html="0"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="icon42_html42">
+      <template>
+        <at-carbon-empty-state icon="42" html="42"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="icon42_htmlEmpty">
+      <template>
+        <at-carbon-empty-state icon="42" html=""></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="icon42_htmlLorem ipsum">
+      <template>
+        <at-carbon-empty-state icon="42" html="lorem ipsum"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="icon42_html{}">
+      <template>
+        <at-carbon-empty-state icon="42" html="{}"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="icon42_html[]">
+      <template>
+        <at-carbon-empty-state icon="42" html="[]"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="icon42_htmlFunction">
+      <template>
+        <at-carbon-empty-state icon="42" html="function f() { return undefined; }"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconEmpty_htmlNotset">
+      <template>
+        <at-carbon-empty-state icon=""></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconEmpty_htmlUndefined">
+      <template>
+        <at-carbon-empty-state icon="" html="undefined"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconEmpty_htmlNull">
+      <template>
+        <at-carbon-empty-state icon="" html="null"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconEmpty_htmlTrue">
+      <template>
+        <at-carbon-empty-state icon="" html="true"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconEmpty_htmlFalse">
+      <template>
+        <at-carbon-empty-state icon="" html="false"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconEmpty_html-42">
+      <template>
+        <at-carbon-empty-state icon="" html="-42"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconEmpty_html0">
+      <template>
+        <at-carbon-empty-state icon="" html="0"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconEmpty_html42">
+      <template>
+        <at-carbon-empty-state icon="" html="42"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconEmpty_htmlEmpty">
+      <template>
+        <at-carbon-empty-state icon="" html=""></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconEmpty_htmlLorem ipsum">
+      <template>
+        <at-carbon-empty-state icon="" html="lorem ipsum"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconEmpty_html{}">
+      <template>
+        <at-carbon-empty-state icon="" html="{}"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconEmpty_html[]">
+      <template>
+        <at-carbon-empty-state icon="" html="[]"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconEmpty_htmlFunction">
+      <template>
+        <at-carbon-empty-state icon="" html="function f() { return undefined; }"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconLorem ipsum_htmlNotset">
+      <template>
+        <at-carbon-empty-state icon="lorem ipsum"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconLorem ipsum_htmlUndefined">
+      <template>
+        <at-carbon-empty-state icon="lorem ipsum" html="undefined"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconLorem ipsum_htmlNull">
+      <template>
+        <at-carbon-empty-state icon="lorem ipsum" html="null"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconLorem ipsum_htmlTrue">
+      <template>
+        <at-carbon-empty-state icon="lorem ipsum" html="true"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconLorem ipsum_htmlFalse">
+      <template>
+        <at-carbon-empty-state icon="lorem ipsum" html="false"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconLorem ipsum_html-42">
+      <template>
+        <at-carbon-empty-state icon="lorem ipsum" html="-42"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconLorem ipsum_html0">
+      <template>
+        <at-carbon-empty-state icon="lorem ipsum" html="0"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconLorem ipsum_html42">
+      <template>
+        <at-carbon-empty-state icon="lorem ipsum" html="42"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconLorem ipsum_htmlEmpty">
+      <template>
+        <at-carbon-empty-state icon="lorem ipsum" html=""></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconLorem ipsum_htmlLorem ipsum">
+      <template>
+        <at-carbon-empty-state icon="lorem ipsum" html="lorem ipsum"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconLorem ipsum_html{}">
+      <template>
+        <at-carbon-empty-state icon="lorem ipsum" html="{}"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconLorem ipsum_html[]">
+      <template>
+        <at-carbon-empty-state icon="lorem ipsum" html="[]"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconLorem ipsum_htmlFunction">
+      <template>
+        <at-carbon-empty-state icon="lorem ipsum" html="function f() { return undefined; }"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="icon{}_htmlNotset">
+      <template>
+        <at-carbon-empty-state icon="{}"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="icon{}_htmlUndefined">
+      <template>
+        <at-carbon-empty-state icon="{}" html="undefined"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="icon{}_htmlNull">
+      <template>
+        <at-carbon-empty-state icon="{}" html="null"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="icon{}_htmlTrue">
+      <template>
+        <at-carbon-empty-state icon="{}" html="true"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="icon{}_htmlFalse">
+      <template>
+        <at-carbon-empty-state icon="{}" html="false"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="icon{}_html-42">
+      <template>
+        <at-carbon-empty-state icon="{}" html="-42"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="icon{}_html0">
+      <template>
+        <at-carbon-empty-state icon="{}" html="0"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="icon{}_html42">
+      <template>
+        <at-carbon-empty-state icon="{}" html="42"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="icon{}_htmlEmpty">
+      <template>
+        <at-carbon-empty-state icon="{}" html=""></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="icon{}_htmlLorem ipsum">
+      <template>
+        <at-carbon-empty-state icon="{}" html="lorem ipsum"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="icon{}_html{}">
+      <template>
+        <at-carbon-empty-state icon="{}" html="{}"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="icon{}_html[]">
+      <template>
+        <at-carbon-empty-state icon="{}" html="[]"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="icon{}_htmlFunction">
+      <template>
+        <at-carbon-empty-state icon="{}" html="function f() { return undefined; }"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="icon[]_htmlNotset">
+      <template>
+        <at-carbon-empty-state icon="[]"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="icon[]_htmlUndefined">
+      <template>
+        <at-carbon-empty-state icon="[]" html="undefined"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="icon[]_htmlNull">
+      <template>
+        <at-carbon-empty-state icon="[]" html="null"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="icon[]_htmlTrue">
+      <template>
+        <at-carbon-empty-state icon="[]" html="true"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="icon[]_htmlFalse">
+      <template>
+        <at-carbon-empty-state icon="[]" html="false"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="icon[]_html-42">
+      <template>
+        <at-carbon-empty-state icon="[]" html="-42"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="icon[]_html0">
+      <template>
+        <at-carbon-empty-state icon="[]" html="0"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="icon[]_html42">
+      <template>
+        <at-carbon-empty-state icon="[]" html="42"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="icon[]_htmlEmpty">
+      <template>
+        <at-carbon-empty-state icon="[]" html=""></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="icon[]_htmlLorem ipsum">
+      <template>
+        <at-carbon-empty-state icon="[]" html="lorem ipsum"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="icon[]_html{}">
+      <template>
+        <at-carbon-empty-state icon="[]" html="{}"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="icon[]_html[]">
+      <template>
+        <at-carbon-empty-state icon="[]" html="[]"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="icon[]_htmlFunction">
+      <template>
+        <at-carbon-empty-state icon="[]" html="function f() { return undefined; }"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconFunction_htmlNotset">
+      <template>
+        <at-carbon-empty-state icon="function f() { return undefined; }"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconFunction_htmlUndefined">
+      <template>
+        <at-carbon-empty-state icon="function f() { return undefined; }" html="undefined"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconFunction_htmlNull">
+      <template>
+        <at-carbon-empty-state icon="function f() { return undefined; }" html="null"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconFunction_htmlTrue">
+      <template>
+        <at-carbon-empty-state icon="function f() { return undefined; }" html="true"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconFunction_htmlFalse">
+      <template>
+        <at-carbon-empty-state icon="function f() { return undefined; }" html="false"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconFunction_html-42">
+      <template>
+        <at-carbon-empty-state icon="function f() { return undefined; }" html="-42"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconFunction_html0">
+      <template>
+        <at-carbon-empty-state icon="function f() { return undefined; }" html="0"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconFunction_html42">
+      <template>
+        <at-carbon-empty-state icon="function f() { return undefined; }" html="42"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconFunction_htmlEmpty">
+      <template>
+        <at-carbon-empty-state icon="function f() { return undefined; }" html=""></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconFunction_htmlLorem ipsum">
+      <template>
+        <at-carbon-empty-state icon="function f() { return undefined; }" html="lorem ipsum"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconFunction_html{}">
+      <template>
+        <at-carbon-empty-state icon="function f() { return undefined; }" html="{}"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconFunction_html[]">
+      <template>
+        <at-carbon-empty-state icon="function f() { return undefined; }" html="[]"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconFunction_htmlFunction">
+      <template>
+        <at-carbon-empty-state icon="function f() { return undefined; }" html="function f() { return undefined; }"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+  <script>
+    suite("basic", function() { 
+      suite("tests where properties are set as attributes", function() { 
+      
+        test("iconNotset_htmlNotset", function() { 
+          var elt = fixture("iconNotset_htmlNotset");
+          assert.equal(elt.icon, "now:error");
+          assert.equal(elt.html, "");
+        });
+        
+        test("iconNotset_htmlUndefined", function() { 
+          var elt = fixture("iconNotset_htmlUndefined");
+          assert.equal(elt.icon, "now:error");
+          assert.equal(elt.html, "undefined");
+        });
+        
+        test("iconNotset_htmlNull", function() { 
+          var elt = fixture("iconNotset_htmlNull");
+          assert.equal(elt.icon, "now:error");
+          assert.equal(elt.html, "null");
+        });
+        
+        test("iconNotset_htmlTrue", function() { 
+          var elt = fixture("iconNotset_htmlTrue");
+          assert.equal(elt.icon, "now:error");
+          assert.equal(elt.html, "true");
+        });
+        
+        test("iconNotset_htmlFalse", function() { 
+          var elt = fixture("iconNotset_htmlFalse");
+          assert.equal(elt.icon, "now:error");
+          assert.equal(elt.html, "false");
+        });
+        
+        test("iconNotset_html-42", function() { 
+          var elt = fixture("iconNotset_html-42");
+          assert.equal(elt.icon, "now:error");
+          assert.equal(elt.html, "-42");
+        });
+        
+        test("iconNotset_html0", function() { 
+          var elt = fixture("iconNotset_html0");
+          assert.equal(elt.icon, "now:error");
+          assert.equal(elt.html, "0");
+        });
+        
+        test("iconNotset_html42", function() { 
+          var elt = fixture("iconNotset_html42");
+          assert.equal(elt.icon, "now:error");
+          assert.equal(elt.html, "42");
+        });
+        
+        test("iconNotset_htmlEmpty", function() { 
+          var elt = fixture("iconNotset_htmlEmpty");
+          assert.equal(elt.icon, "now:error");
+          assert.equal(elt.html, "");
+        });
+        
+        test("iconNotset_htmlLorem ipsum", function() { 
+          var elt = fixture("iconNotset_htmlLorem ipsum");
+          assert.equal(elt.icon, "now:error");
+          assert.equal(elt.html, "lorem ipsum");
+        });
+        
+        test("iconNotset_html{}", function() { 
+          var elt = fixture("iconNotset_html{}");
+          assert.equal(elt.icon, "now:error");
+          assert.equal(elt.html, "{}");
+        });
+        
+        test("iconNotset_html[]", function() { 
+          var elt = fixture("iconNotset_html[]");
+          assert.equal(elt.icon, "now:error");
+          assert.equal(elt.html, "[]");
+        });
+        
+        test("iconNotset_htmlFunction", function() { 
+          var elt = fixture("iconNotset_htmlFunction");
+          assert.equal(elt.icon, "now:error");
+          assert.equal(elt.html, "function f() { return undefined; }");
+        });
+        
+        test("iconUndefined_htmlNotset", function() { 
+          var elt = fixture("iconUndefined_htmlNotset");
+          assert.equal(elt.icon, "undefined");
+          assert.equal(elt.html, "");
+        });
+        
+        test("iconUndefined_htmlUndefined", function() { 
+          var elt = fixture("iconUndefined_htmlUndefined");
+          assert.equal(elt.icon, "undefined");
+          assert.equal(elt.html, "undefined");
+        });
+        
+        test("iconUndefined_htmlNull", function() { 
+          var elt = fixture("iconUndefined_htmlNull");
+          assert.equal(elt.icon, "undefined");
+          assert.equal(elt.html, "null");
+        });
+        
+        test("iconUndefined_htmlTrue", function() { 
+          var elt = fixture("iconUndefined_htmlTrue");
+          assert.equal(elt.icon, "undefined");
+          assert.equal(elt.html, "true");
+        });
+        
+        test("iconUndefined_htmlFalse", function() { 
+          var elt = fixture("iconUndefined_htmlFalse");
+          assert.equal(elt.icon, "undefined");
+          assert.equal(elt.html, "false");
+        });
+        
+        test("iconUndefined_html-42", function() { 
+          var elt = fixture("iconUndefined_html-42");
+          assert.equal(elt.icon, "undefined");
+          assert.equal(elt.html, "-42");
+        });
+        
+        test("iconUndefined_html0", function() { 
+          var elt = fixture("iconUndefined_html0");
+          assert.equal(elt.icon, "undefined");
+          assert.equal(elt.html, "0");
+        });
+        
+        test("iconUndefined_html42", function() { 
+          var elt = fixture("iconUndefined_html42");
+          assert.equal(elt.icon, "undefined");
+          assert.equal(elt.html, "42");
+        });
+        
+        test("iconUndefined_htmlEmpty", function() { 
+          var elt = fixture("iconUndefined_htmlEmpty");
+          assert.equal(elt.icon, "undefined");
+          assert.equal(elt.html, "");
+        });
+        
+        test("iconUndefined_htmlLorem ipsum", function() { 
+          var elt = fixture("iconUndefined_htmlLorem ipsum");
+          assert.equal(elt.icon, "undefined");
+          assert.equal(elt.html, "lorem ipsum");
+        });
+        
+        test("iconUndefined_html{}", function() { 
+          var elt = fixture("iconUndefined_html{}");
+          assert.equal(elt.icon, "undefined");
+          assert.equal(elt.html, "{}");
+        });
+        
+        test("iconUndefined_html[]", function() { 
+          var elt = fixture("iconUndefined_html[]");
+          assert.equal(elt.icon, "undefined");
+          assert.equal(elt.html, "[]");
+        });
+        
+        test("iconUndefined_htmlFunction", function() { 
+          var elt = fixture("iconUndefined_htmlFunction");
+          assert.equal(elt.icon, "undefined");
+          assert.equal(elt.html, "function f() { return undefined; }");
+        });
+        
+        test("iconNull_htmlNotset", function() { 
+          var elt = fixture("iconNull_htmlNotset");
+          assert.equal(elt.icon, "null");
+          assert.equal(elt.html, "");
+        });
+        
+        test("iconNull_htmlUndefined", function() { 
+          var elt = fixture("iconNull_htmlUndefined");
+          assert.equal(elt.icon, "null");
+          assert.equal(elt.html, "undefined");
+        });
+        
+        test("iconNull_htmlNull", function() { 
+          var elt = fixture("iconNull_htmlNull");
+          assert.equal(elt.icon, "null");
+          assert.equal(elt.html, "null");
+        });
+        
+        test("iconNull_htmlTrue", function() { 
+          var elt = fixture("iconNull_htmlTrue");
+          assert.equal(elt.icon, "null");
+          assert.equal(elt.html, "true");
+        });
+        
+        test("iconNull_htmlFalse", function() { 
+          var elt = fixture("iconNull_htmlFalse");
+          assert.equal(elt.icon, "null");
+          assert.equal(elt.html, "false");
+        });
+        
+        test("iconNull_html-42", function() { 
+          var elt = fixture("iconNull_html-42");
+          assert.equal(elt.icon, "null");
+          assert.equal(elt.html, "-42");
+        });
+        
+        test("iconNull_html0", function() { 
+          var elt = fixture("iconNull_html0");
+          assert.equal(elt.icon, "null");
+          assert.equal(elt.html, "0");
+        });
+        
+        test("iconNull_html42", function() { 
+          var elt = fixture("iconNull_html42");
+          assert.equal(elt.icon, "null");
+          assert.equal(elt.html, "42");
+        });
+        
+        test("iconNull_htmlEmpty", function() { 
+          var elt = fixture("iconNull_htmlEmpty");
+          assert.equal(elt.icon, "null");
+          assert.equal(elt.html, "");
+        });
+        
+        test("iconNull_htmlLorem ipsum", function() { 
+          var elt = fixture("iconNull_htmlLorem ipsum");
+          assert.equal(elt.icon, "null");
+          assert.equal(elt.html, "lorem ipsum");
+        });
+        
+        test("iconNull_html{}", function() { 
+          var elt = fixture("iconNull_html{}");
+          assert.equal(elt.icon, "null");
+          assert.equal(elt.html, "{}");
+        });
+        
+        test("iconNull_html[]", function() { 
+          var elt = fixture("iconNull_html[]");
+          assert.equal(elt.icon, "null");
+          assert.equal(elt.html, "[]");
+        });
+        
+        test("iconNull_htmlFunction", function() { 
+          var elt = fixture("iconNull_htmlFunction");
+          assert.equal(elt.icon, "null");
+          assert.equal(elt.html, "function f() { return undefined; }");
+        });
+        
+        test("iconTrue_htmlNotset", function() { 
+          var elt = fixture("iconTrue_htmlNotset");
+          assert.equal(elt.icon, "true");
+          assert.equal(elt.html, "");
+        });
+        
+        test("iconTrue_htmlUndefined", function() { 
+          var elt = fixture("iconTrue_htmlUndefined");
+          assert.equal(elt.icon, "true");
+          assert.equal(elt.html, "undefined");
+        });
+        
+        test("iconTrue_htmlNull", function() { 
+          var elt = fixture("iconTrue_htmlNull");
+          assert.equal(elt.icon, "true");
+          assert.equal(elt.html, "null");
+        });
+        
+        test("iconTrue_htmlTrue", function() { 
+          var elt = fixture("iconTrue_htmlTrue");
+          assert.equal(elt.icon, "true");
+          assert.equal(elt.html, "true");
+        });
+        
+        test("iconTrue_htmlFalse", function() { 
+          var elt = fixture("iconTrue_htmlFalse");
+          assert.equal(elt.icon, "true");
+          assert.equal(elt.html, "false");
+        });
+        
+        test("iconTrue_html-42", function() { 
+          var elt = fixture("iconTrue_html-42");
+          assert.equal(elt.icon, "true");
+          assert.equal(elt.html, "-42");
+        });
+        
+        test("iconTrue_html0", function() { 
+          var elt = fixture("iconTrue_html0");
+          assert.equal(elt.icon, "true");
+          assert.equal(elt.html, "0");
+        });
+        
+        test("iconTrue_html42", function() { 
+          var elt = fixture("iconTrue_html42");
+          assert.equal(elt.icon, "true");
+          assert.equal(elt.html, "42");
+        });
+        
+        test("iconTrue_htmlEmpty", function() { 
+          var elt = fixture("iconTrue_htmlEmpty");
+          assert.equal(elt.icon, "true");
+          assert.equal(elt.html, "");
+        });
+        
+        test("iconTrue_htmlLorem ipsum", function() { 
+          var elt = fixture("iconTrue_htmlLorem ipsum");
+          assert.equal(elt.icon, "true");
+          assert.equal(elt.html, "lorem ipsum");
+        });
+        
+        test("iconTrue_html{}", function() { 
+          var elt = fixture("iconTrue_html{}");
+          assert.equal(elt.icon, "true");
+          assert.equal(elt.html, "{}");
+        });
+        
+        test("iconTrue_html[]", function() { 
+          var elt = fixture("iconTrue_html[]");
+          assert.equal(elt.icon, "true");
+          assert.equal(elt.html, "[]");
+        });
+        
+        test("iconTrue_htmlFunction", function() { 
+          var elt = fixture("iconTrue_htmlFunction");
+          assert.equal(elt.icon, "true");
+          assert.equal(elt.html, "function f() { return undefined; }");
+        });
+        
+        test("iconFalse_htmlNotset", function() { 
+          var elt = fixture("iconFalse_htmlNotset");
+          assert.equal(elt.icon, "false");
+          assert.equal(elt.html, "");
+        });
+        
+        test("iconFalse_htmlUndefined", function() { 
+          var elt = fixture("iconFalse_htmlUndefined");
+          assert.equal(elt.icon, "false");
+          assert.equal(elt.html, "undefined");
+        });
+        
+        test("iconFalse_htmlNull", function() { 
+          var elt = fixture("iconFalse_htmlNull");
+          assert.equal(elt.icon, "false");
+          assert.equal(elt.html, "null");
+        });
+        
+        test("iconFalse_htmlTrue", function() { 
+          var elt = fixture("iconFalse_htmlTrue");
+          assert.equal(elt.icon, "false");
+          assert.equal(elt.html, "true");
+        });
+        
+        test("iconFalse_htmlFalse", function() { 
+          var elt = fixture("iconFalse_htmlFalse");
+          assert.equal(elt.icon, "false");
+          assert.equal(elt.html, "false");
+        });
+        
+        test("iconFalse_html-42", function() { 
+          var elt = fixture("iconFalse_html-42");
+          assert.equal(elt.icon, "false");
+          assert.equal(elt.html, "-42");
+        });
+        
+        test("iconFalse_html0", function() { 
+          var elt = fixture("iconFalse_html0");
+          assert.equal(elt.icon, "false");
+          assert.equal(elt.html, "0");
+        });
+        
+        test("iconFalse_html42", function() { 
+          var elt = fixture("iconFalse_html42");
+          assert.equal(elt.icon, "false");
+          assert.equal(elt.html, "42");
+        });
+        
+        test("iconFalse_htmlEmpty", function() { 
+          var elt = fixture("iconFalse_htmlEmpty");
+          assert.equal(elt.icon, "false");
+          assert.equal(elt.html, "");
+        });
+        
+        test("iconFalse_htmlLorem ipsum", function() { 
+          var elt = fixture("iconFalse_htmlLorem ipsum");
+          assert.equal(elt.icon, "false");
+          assert.equal(elt.html, "lorem ipsum");
+        });
+        
+        test("iconFalse_html{}", function() { 
+          var elt = fixture("iconFalse_html{}");
+          assert.equal(elt.icon, "false");
+          assert.equal(elt.html, "{}");
+        });
+        
+        test("iconFalse_html[]", function() { 
+          var elt = fixture("iconFalse_html[]");
+          assert.equal(elt.icon, "false");
+          assert.equal(elt.html, "[]");
+        });
+        
+        test("iconFalse_htmlFunction", function() { 
+          var elt = fixture("iconFalse_htmlFunction");
+          assert.equal(elt.icon, "false");
+          assert.equal(elt.html, "function f() { return undefined; }");
+        });
+        
+        test("icon-42_htmlNotset", function() { 
+          var elt = fixture("icon-42_htmlNotset");
+          assert.equal(elt.icon, "-42");
+          assert.equal(elt.html, "");
+        });
+        
+        test("icon-42_htmlUndefined", function() { 
+          var elt = fixture("icon-42_htmlUndefined");
+          assert.equal(elt.icon, "-42");
+          assert.equal(elt.html, "undefined");
+        });
+        
+        test("icon-42_htmlNull", function() { 
+          var elt = fixture("icon-42_htmlNull");
+          assert.equal(elt.icon, "-42");
+          assert.equal(elt.html, "null");
+        });
+        
+        test("icon-42_htmlTrue", function() { 
+          var elt = fixture("icon-42_htmlTrue");
+          assert.equal(elt.icon, "-42");
+          assert.equal(elt.html, "true");
+        });
+        
+        test("icon-42_htmlFalse", function() { 
+          var elt = fixture("icon-42_htmlFalse");
+          assert.equal(elt.icon, "-42");
+          assert.equal(elt.html, "false");
+        });
+        
+        test("icon-42_html-42", function() { 
+          var elt = fixture("icon-42_html-42");
+          assert.equal(elt.icon, "-42");
+          assert.equal(elt.html, "-42");
+        });
+        
+        test("icon-42_html0", function() { 
+          var elt = fixture("icon-42_html0");
+          assert.equal(elt.icon, "-42");
+          assert.equal(elt.html, "0");
+        });
+        
+        test("icon-42_html42", function() { 
+          var elt = fixture("icon-42_html42");
+          assert.equal(elt.icon, "-42");
+          assert.equal(elt.html, "42");
+        });
+        
+        test("icon-42_htmlEmpty", function() { 
+          var elt = fixture("icon-42_htmlEmpty");
+          assert.equal(elt.icon, "-42");
+          assert.equal(elt.html, "");
+        });
+        
+        test("icon-42_htmlLorem ipsum", function() { 
+          var elt = fixture("icon-42_htmlLorem ipsum");
+          assert.equal(elt.icon, "-42");
+          assert.equal(elt.html, "lorem ipsum");
+        });
+        
+        test("icon-42_html{}", function() { 
+          var elt = fixture("icon-42_html{}");
+          assert.equal(elt.icon, "-42");
+          assert.equal(elt.html, "{}");
+        });
+        
+        test("icon-42_html[]", function() { 
+          var elt = fixture("icon-42_html[]");
+          assert.equal(elt.icon, "-42");
+          assert.equal(elt.html, "[]");
+        });
+        
+        test("icon-42_htmlFunction", function() { 
+          var elt = fixture("icon-42_htmlFunction");
+          assert.equal(elt.icon, "-42");
+          assert.equal(elt.html, "function f() { return undefined; }");
+        });
+        
+        test("icon0_htmlNotset", function() { 
+          var elt = fixture("icon0_htmlNotset");
+          assert.equal(elt.icon, "0");
+          assert.equal(elt.html, "");
+        });
+        
+        test("icon0_htmlUndefined", function() { 
+          var elt = fixture("icon0_htmlUndefined");
+          assert.equal(elt.icon, "0");
+          assert.equal(elt.html, "undefined");
+        });
+        
+        test("icon0_htmlNull", function() { 
+          var elt = fixture("icon0_htmlNull");
+          assert.equal(elt.icon, "0");
+          assert.equal(elt.html, "null");
+        });
+        
+        test("icon0_htmlTrue", function() { 
+          var elt = fixture("icon0_htmlTrue");
+          assert.equal(elt.icon, "0");
+          assert.equal(elt.html, "true");
+        });
+        
+        test("icon0_htmlFalse", function() { 
+          var elt = fixture("icon0_htmlFalse");
+          assert.equal(elt.icon, "0");
+          assert.equal(elt.html, "false");
+        });
+        
+        test("icon0_html-42", function() { 
+          var elt = fixture("icon0_html-42");
+          assert.equal(elt.icon, "0");
+          assert.equal(elt.html, "-42");
+        });
+        
+        test("icon0_html0", function() { 
+          var elt = fixture("icon0_html0");
+          assert.equal(elt.icon, "0");
+          assert.equal(elt.html, "0");
+        });
+        
+        test("icon0_html42", function() { 
+          var elt = fixture("icon0_html42");
+          assert.equal(elt.icon, "0");
+          assert.equal(elt.html, "42");
+        });
+        
+        test("icon0_htmlEmpty", function() { 
+          var elt = fixture("icon0_htmlEmpty");
+          assert.equal(elt.icon, "0");
+          assert.equal(elt.html, "");
+        });
+        
+        test("icon0_htmlLorem ipsum", function() { 
+          var elt = fixture("icon0_htmlLorem ipsum");
+          assert.equal(elt.icon, "0");
+          assert.equal(elt.html, "lorem ipsum");
+        });
+        
+        test("icon0_html{}", function() { 
+          var elt = fixture("icon0_html{}");
+          assert.equal(elt.icon, "0");
+          assert.equal(elt.html, "{}");
+        });
+        
+        test("icon0_html[]", function() { 
+          var elt = fixture("icon0_html[]");
+          assert.equal(elt.icon, "0");
+          assert.equal(elt.html, "[]");
+        });
+        
+        test("icon0_htmlFunction", function() { 
+          var elt = fixture("icon0_htmlFunction");
+          assert.equal(elt.icon, "0");
+          assert.equal(elt.html, "function f() { return undefined; }");
+        });
+        
+        test("icon42_htmlNotset", function() { 
+          var elt = fixture("icon42_htmlNotset");
+          assert.equal(elt.icon, "42");
+          assert.equal(elt.html, "");
+        });
+        
+        test("icon42_htmlUndefined", function() { 
+          var elt = fixture("icon42_htmlUndefined");
+          assert.equal(elt.icon, "42");
+          assert.equal(elt.html, "undefined");
+        });
+        
+        test("icon42_htmlNull", function() { 
+          var elt = fixture("icon42_htmlNull");
+          assert.equal(elt.icon, "42");
+          assert.equal(elt.html, "null");
+        });
+        
+        test("icon42_htmlTrue", function() { 
+          var elt = fixture("icon42_htmlTrue");
+          assert.equal(elt.icon, "42");
+          assert.equal(elt.html, "true");
+        });
+        
+        test("icon42_htmlFalse", function() { 
+          var elt = fixture("icon42_htmlFalse");
+          assert.equal(elt.icon, "42");
+          assert.equal(elt.html, "false");
+        });
+        
+        test("icon42_html-42", function() { 
+          var elt = fixture("icon42_html-42");
+          assert.equal(elt.icon, "42");
+          assert.equal(elt.html, "-42");
+        });
+        
+        test("icon42_html0", function() { 
+          var elt = fixture("icon42_html0");
+          assert.equal(elt.icon, "42");
+          assert.equal(elt.html, "0");
+        });
+        
+        test("icon42_html42", function() { 
+          var elt = fixture("icon42_html42");
+          assert.equal(elt.icon, "42");
+          assert.equal(elt.html, "42");
+        });
+        
+        test("icon42_htmlEmpty", function() { 
+          var elt = fixture("icon42_htmlEmpty");
+          assert.equal(elt.icon, "42");
+          assert.equal(elt.html, "");
+        });
+        
+        test("icon42_htmlLorem ipsum", function() { 
+          var elt = fixture("icon42_htmlLorem ipsum");
+          assert.equal(elt.icon, "42");
+          assert.equal(elt.html, "lorem ipsum");
+        });
+        
+        test("icon42_html{}", function() { 
+          var elt = fixture("icon42_html{}");
+          assert.equal(elt.icon, "42");
+          assert.equal(elt.html, "{}");
+        });
+        
+        test("icon42_html[]", function() { 
+          var elt = fixture("icon42_html[]");
+          assert.equal(elt.icon, "42");
+          assert.equal(elt.html, "[]");
+        });
+        
+        test("icon42_htmlFunction", function() { 
+          var elt = fixture("icon42_htmlFunction");
+          assert.equal(elt.icon, "42");
+          assert.equal(elt.html, "function f() { return undefined; }");
+        });
+        
+        test("iconEmpty_htmlNotset", function() { 
+          var elt = fixture("iconEmpty_htmlNotset");
+          assert.equal(elt.icon, "");
+          assert.equal(elt.html, "");
+        });
+        
+        test("iconEmpty_htmlUndefined", function() { 
+          var elt = fixture("iconEmpty_htmlUndefined");
+          assert.equal(elt.icon, "");
+          assert.equal(elt.html, "undefined");
+        });
+        
+        test("iconEmpty_htmlNull", function() { 
+          var elt = fixture("iconEmpty_htmlNull");
+          assert.equal(elt.icon, "");
+          assert.equal(elt.html, "null");
+        });
+        
+        test("iconEmpty_htmlTrue", function() { 
+          var elt = fixture("iconEmpty_htmlTrue");
+          assert.equal(elt.icon, "");
+          assert.equal(elt.html, "true");
+        });
+        
+        test("iconEmpty_htmlFalse", function() { 
+          var elt = fixture("iconEmpty_htmlFalse");
+          assert.equal(elt.icon, "");
+          assert.equal(elt.html, "false");
+        });
+        
+        test("iconEmpty_html-42", function() { 
+          var elt = fixture("iconEmpty_html-42");
+          assert.equal(elt.icon, "");
+          assert.equal(elt.html, "-42");
+        });
+        
+        test("iconEmpty_html0", function() { 
+          var elt = fixture("iconEmpty_html0");
+          assert.equal(elt.icon, "");
+          assert.equal(elt.html, "0");
+        });
+        
+        test("iconEmpty_html42", function() { 
+          var elt = fixture("iconEmpty_html42");
+          assert.equal(elt.icon, "");
+          assert.equal(elt.html, "42");
+        });
+        
+        test("iconEmpty_htmlEmpty", function() { 
+          var elt = fixture("iconEmpty_htmlEmpty");
+          assert.equal(elt.icon, "");
+          assert.equal(elt.html, "");
+        });
+        
+        test("iconEmpty_htmlLorem ipsum", function() { 
+          var elt = fixture("iconEmpty_htmlLorem ipsum");
+          assert.equal(elt.icon, "");
+          assert.equal(elt.html, "lorem ipsum");
+        });
+        
+        test("iconEmpty_html{}", function() { 
+          var elt = fixture("iconEmpty_html{}");
+          assert.equal(elt.icon, "");
+          assert.equal(elt.html, "{}");
+        });
+        
+        test("iconEmpty_html[]", function() { 
+          var elt = fixture("iconEmpty_html[]");
+          assert.equal(elt.icon, "");
+          assert.equal(elt.html, "[]");
+        });
+        
+        test("iconEmpty_htmlFunction", function() { 
+          var elt = fixture("iconEmpty_htmlFunction");
+          assert.equal(elt.icon, "");
+          assert.equal(elt.html, "function f() { return undefined; }");
+        });
+        
+        test("iconLorem ipsum_htmlNotset", function() { 
+          var elt = fixture("iconLorem ipsum_htmlNotset");
+          assert.equal(elt.icon, "lorem ipsum");
+          assert.equal(elt.html, "");
+        });
+        
+        test("iconLorem ipsum_htmlUndefined", function() { 
+          var elt = fixture("iconLorem ipsum_htmlUndefined");
+          assert.equal(elt.icon, "lorem ipsum");
+          assert.equal(elt.html, "undefined");
+        });
+        
+        test("iconLorem ipsum_htmlNull", function() { 
+          var elt = fixture("iconLorem ipsum_htmlNull");
+          assert.equal(elt.icon, "lorem ipsum");
+          assert.equal(elt.html, "null");
+        });
+        
+        test("iconLorem ipsum_htmlTrue", function() { 
+          var elt = fixture("iconLorem ipsum_htmlTrue");
+          assert.equal(elt.icon, "lorem ipsum");
+          assert.equal(elt.html, "true");
+        });
+        
+        test("iconLorem ipsum_htmlFalse", function() { 
+          var elt = fixture("iconLorem ipsum_htmlFalse");
+          assert.equal(elt.icon, "lorem ipsum");
+          assert.equal(elt.html, "false");
+        });
+        
+        test("iconLorem ipsum_html-42", function() { 
+          var elt = fixture("iconLorem ipsum_html-42");
+          assert.equal(elt.icon, "lorem ipsum");
+          assert.equal(elt.html, "-42");
+        });
+        
+        test("iconLorem ipsum_html0", function() { 
+          var elt = fixture("iconLorem ipsum_html0");
+          assert.equal(elt.icon, "lorem ipsum");
+          assert.equal(elt.html, "0");
+        });
+        
+        test("iconLorem ipsum_html42", function() { 
+          var elt = fixture("iconLorem ipsum_html42");
+          assert.equal(elt.icon, "lorem ipsum");
+          assert.equal(elt.html, "42");
+        });
+        
+        test("iconLorem ipsum_htmlEmpty", function() { 
+          var elt = fixture("iconLorem ipsum_htmlEmpty");
+          assert.equal(elt.icon, "lorem ipsum");
+          assert.equal(elt.html, "");
+        });
+        
+        test("iconLorem ipsum_htmlLorem ipsum", function() { 
+          var elt = fixture("iconLorem ipsum_htmlLorem ipsum");
+          assert.equal(elt.icon, "lorem ipsum");
+          assert.equal(elt.html, "lorem ipsum");
+        });
+        
+        test("iconLorem ipsum_html{}", function() { 
+          var elt = fixture("iconLorem ipsum_html{}");
+          assert.equal(elt.icon, "lorem ipsum");
+          assert.equal(elt.html, "{}");
+        });
+        
+        test("iconLorem ipsum_html[]", function() { 
+          var elt = fixture("iconLorem ipsum_html[]");
+          assert.equal(elt.icon, "lorem ipsum");
+          assert.equal(elt.html, "[]");
+        });
+        
+        test("iconLorem ipsum_htmlFunction", function() { 
+          var elt = fixture("iconLorem ipsum_htmlFunction");
+          assert.equal(elt.icon, "lorem ipsum");
+          assert.equal(elt.html, "function f() { return undefined; }");
+        });
+        
+        test("icon{}_htmlNotset", function() { 
+          var elt = fixture("icon{}_htmlNotset");
+          assert.equal(elt.icon, "{}");
+          assert.equal(elt.html, "");
+        });
+        
+        test("icon{}_htmlUndefined", function() { 
+          var elt = fixture("icon{}_htmlUndefined");
+          assert.equal(elt.icon, "{}");
+          assert.equal(elt.html, "undefined");
+        });
+        
+        test("icon{}_htmlNull", function() { 
+          var elt = fixture("icon{}_htmlNull");
+          assert.equal(elt.icon, "{}");
+          assert.equal(elt.html, "null");
+        });
+        
+        test("icon{}_htmlTrue", function() { 
+          var elt = fixture("icon{}_htmlTrue");
+          assert.equal(elt.icon, "{}");
+          assert.equal(elt.html, "true");
+        });
+        
+        test("icon{}_htmlFalse", function() { 
+          var elt = fixture("icon{}_htmlFalse");
+          assert.equal(elt.icon, "{}");
+          assert.equal(elt.html, "false");
+        });
+        
+        test("icon{}_html-42", function() { 
+          var elt = fixture("icon{}_html-42");
+          assert.equal(elt.icon, "{}");
+          assert.equal(elt.html, "-42");
+        });
+        
+        test("icon{}_html0", function() { 
+          var elt = fixture("icon{}_html0");
+          assert.equal(elt.icon, "{}");
+          assert.equal(elt.html, "0");
+        });
+        
+        test("icon{}_html42", function() { 
+          var elt = fixture("icon{}_html42");
+          assert.equal(elt.icon, "{}");
+          assert.equal(elt.html, "42");
+        });
+        
+        test("icon{}_htmlEmpty", function() { 
+          var elt = fixture("icon{}_htmlEmpty");
+          assert.equal(elt.icon, "{}");
+          assert.equal(elt.html, "");
+        });
+        
+        test("icon{}_htmlLorem ipsum", function() { 
+          var elt = fixture("icon{}_htmlLorem ipsum");
+          assert.equal(elt.icon, "{}");
+          assert.equal(elt.html, "lorem ipsum");
+        });
+        
+        test("icon{}_html{}", function() { 
+          var elt = fixture("icon{}_html{}");
+          assert.equal(elt.icon, "{}");
+          assert.equal(elt.html, "{}");
+        });
+        
+        test("icon{}_html[]", function() { 
+          var elt = fixture("icon{}_html[]");
+          assert.equal(elt.icon, "{}");
+          assert.equal(elt.html, "[]");
+        });
+        
+        test("icon{}_htmlFunction", function() { 
+          var elt = fixture("icon{}_htmlFunction");
+          assert.equal(elt.icon, "{}");
+          assert.equal(elt.html, "function f() { return undefined; }");
+        });
+        
+        test("icon[]_htmlNotset", function() { 
+          var elt = fixture("icon[]_htmlNotset");
+          assert.equal(elt.icon, "[]");
+          assert.equal(elt.html, "");
+        });
+        
+        test("icon[]_htmlUndefined", function() { 
+          var elt = fixture("icon[]_htmlUndefined");
+          assert.equal(elt.icon, "[]");
+          assert.equal(elt.html, "undefined");
+        });
+        
+        test("icon[]_htmlNull", function() { 
+          var elt = fixture("icon[]_htmlNull");
+          assert.equal(elt.icon, "[]");
+          assert.equal(elt.html, "null");
+        });
+        
+        test("icon[]_htmlTrue", function() { 
+          var elt = fixture("icon[]_htmlTrue");
+          assert.equal(elt.icon, "[]");
+          assert.equal(elt.html, "true");
+        });
+        
+        test("icon[]_htmlFalse", function() { 
+          var elt = fixture("icon[]_htmlFalse");
+          assert.equal(elt.icon, "[]");
+          assert.equal(elt.html, "false");
+        });
+        
+        test("icon[]_html-42", function() { 
+          var elt = fixture("icon[]_html-42");
+          assert.equal(elt.icon, "[]");
+          assert.equal(elt.html, "-42");
+        });
+        
+        test("icon[]_html0", function() { 
+          var elt = fixture("icon[]_html0");
+          assert.equal(elt.icon, "[]");
+          assert.equal(elt.html, "0");
+        });
+        
+        test("icon[]_html42", function() { 
+          var elt = fixture("icon[]_html42");
+          assert.equal(elt.icon, "[]");
+          assert.equal(elt.html, "42");
+        });
+        
+        test("icon[]_htmlEmpty", function() { 
+          var elt = fixture("icon[]_htmlEmpty");
+          assert.equal(elt.icon, "[]");
+          assert.equal(elt.html, "");
+        });
+        
+        test("icon[]_htmlLorem ipsum", function() { 
+          var elt = fixture("icon[]_htmlLorem ipsum");
+          assert.equal(elt.icon, "[]");
+          assert.equal(elt.html, "lorem ipsum");
+        });
+        
+        test("icon[]_html{}", function() { 
+          var elt = fixture("icon[]_html{}");
+          assert.equal(elt.icon, "[]");
+          assert.equal(elt.html, "{}");
+        });
+        
+        test("icon[]_html[]", function() { 
+          var elt = fixture("icon[]_html[]");
+          assert.equal(elt.icon, "[]");
+          assert.equal(elt.html, "[]");
+        });
+        
+        test("icon[]_htmlFunction", function() { 
+          var elt = fixture("icon[]_htmlFunction");
+          assert.equal(elt.icon, "[]");
+          assert.equal(elt.html, "function f() { return undefined; }");
+        });
+        
+        test("iconFunction_htmlNotset", function() { 
+          var elt = fixture("iconFunction_htmlNotset");
+          assert.equal(elt.icon, "function f() { return undefined; }");
+          assert.equal(elt.html, "");
+        });
+        
+        test("iconFunction_htmlUndefined", function() { 
+          var elt = fixture("iconFunction_htmlUndefined");
+          assert.equal(elt.icon, "function f() { return undefined; }");
+          assert.equal(elt.html, "undefined");
+        });
+        
+        test("iconFunction_htmlNull", function() { 
+          var elt = fixture("iconFunction_htmlNull");
+          assert.equal(elt.icon, "function f() { return undefined; }");
+          assert.equal(elt.html, "null");
+        });
+        
+        test("iconFunction_htmlTrue", function() { 
+          var elt = fixture("iconFunction_htmlTrue");
+          assert.equal(elt.icon, "function f() { return undefined; }");
+          assert.equal(elt.html, "true");
+        });
+        
+        test("iconFunction_htmlFalse", function() { 
+          var elt = fixture("iconFunction_htmlFalse");
+          assert.equal(elt.icon, "function f() { return undefined; }");
+          assert.equal(elt.html, "false");
+        });
+        
+        test("iconFunction_html-42", function() { 
+          var elt = fixture("iconFunction_html-42");
+          assert.equal(elt.icon, "function f() { return undefined; }");
+          assert.equal(elt.html, "-42");
+        });
+        
+        test("iconFunction_html0", function() { 
+          var elt = fixture("iconFunction_html0");
+          assert.equal(elt.icon, "function f() { return undefined; }");
+          assert.equal(elt.html, "0");
+        });
+        
+        test("iconFunction_html42", function() { 
+          var elt = fixture("iconFunction_html42");
+          assert.equal(elt.icon, "function f() { return undefined; }");
+          assert.equal(elt.html, "42");
+        });
+        
+        test("iconFunction_htmlEmpty", function() { 
+          var elt = fixture("iconFunction_htmlEmpty");
+          assert.equal(elt.icon, "function f() { return undefined; }");
+          assert.equal(elt.html, "");
+        });
+        
+        test("iconFunction_htmlLorem ipsum", function() { 
+          var elt = fixture("iconFunction_htmlLorem ipsum");
+          assert.equal(elt.icon, "function f() { return undefined; }");
+          assert.equal(elt.html, "lorem ipsum");
+        });
+        
+        test("iconFunction_html{}", function() { 
+          var elt = fixture("iconFunction_html{}");
+          assert.equal(elt.icon, "function f() { return undefined; }");
+          assert.equal(elt.html, "{}");
+        });
+        
+        test("iconFunction_html[]", function() { 
+          var elt = fixture("iconFunction_html[]");
+          assert.equal(elt.icon, "function f() { return undefined; }");
+          assert.equal(elt.html, "[]");
+        });
+        
+        test("iconFunction_htmlFunction", function() { 
+          var elt = fixture("iconFunction_htmlFunction");
+          assert.equal(elt.icon, "function f() { return undefined; }");
+          assert.equal(elt.html, "function f() { return undefined; }");
+        });
+        
+      });
+
+      suite("tests where properties are set as in code", function() { 
+
+        test('invalid values test', function() {
+          var elt = fixture('iconNotset_htmlNotset');
+
+          var attrNames = [ "icon", "html" ];
+          
+          var actIconValues = [ 
+            "notset", "undefined", "null", "true", "false", "-42", "0", "42", "", "lorem ipsum", "{}", "[]", "function f() { return undefined; }", 
+            undefined, null, true, false, -42, 0, 42, {}, [], function () { return undefined; }
+            ];
+          var actHmtlValues = [ 
+            "notset", "undefined", "null", "true", "false", "-42", "0", "42", "", "lorem ipsum", "{}", "[]", "function f() { return undefined; }",
+            undefined, null, true, false, -42, 0, 42, {}, [], function () { return undefined; }
+          ];
+
+          var expIconValues = [ "now:error", "undefined", "null", "true", "false", "-42", "0", "42", "", "lorem ipsum", "{}", "[]", "function f() { return undefined; }",
+            undefined, null, true, false, -42, 0, 42, {}, [], function () { return undefined; }
+           ];
+          var expHtmlValues = [ "", "undefined", "null", "true", "false", "-42", "0", "42", "", "lorem ipsum", "{}", "[]", "function f() { return undefined; }",
+            undefined, null, true, false, -42, 0, 42, {}, [], function () { return undefined; }
+          ];
+
+          for (var i=0; i < actIconValues.length; i++) {
+
+            for (var j=0; j < actHmtlValues.length; j++ ) {
+              var actIconValue = actIconValues[i];
+              var actHmtlValue = actHmtlValues[j];
+
+              var expIconValue = expIconValues[i];
+              var expHtmlValue = expHtmlValues[j];
+
+              if (actIconValue !== "notset") {
+                elt.icon = actIconValue;
+              } else {
+                elt.icon = "now:error";
+              }
+              if (actHmtlValue !== "notset") {
+                elt.html = actHmtlValue;
+              } else {
+                elt.html = "";
+              }
+
+              var eq = areEqual(elt.icon, expIconValue);
+              assert.equal(eq, true);
+              eq = areEqual(elt.html, expHtmlValue);
+              assert.equal(eq, true);
+            }
+          }
+
+        });
+
+      });
+
+      function isArray(obj) {
+        return Object.prototype.toString.apply(obj) === "[object Array]";
+      }
+
+      function isObject(obj) {
+        return Object.prototype.toString.apply(obj) === "[object Object]";
+      }
+
+      function isFunction(obj) {
+        return Object.prototype.toString.apply(obj) === "[object Function]";
+      }
+
+      /**
+       * This function tests for equality of two variables
+       * it works for primitive types string, number, boolean, null and undefined
+       * and reference types of object and array
+       *
+       * For primitive types equality is tested with === operator
+       * For arrays both arrays must have same length and at each index values must also be equal. Equality is tested by recursively calling areEqual function
+       * For objects both objects must have same number of properties, property names must match and property values must match.
+       * Property names testing is not "deep". Only Object.keys(obj) are tested
+       * Property name equality is tested with === operator and property value equality is tested by recursively calling areEqual function
+       */
+      function areEqual(obj1, obj2) {
+        var result = false;
+        var obj1PropertyValue;
+        var obj2PropertyValue;
+
+        if (isArray(obj1) && isArray(obj2)) {
+          result = obj1.length === obj2.length;
+          // if lengths are different return false
+          if(!result) {
+            return result;
+          }
+
+          // else compare items in the arrays for equality
+          for (var i = 0; i < obj1.length && result; i++) {
+            obj1PropertyValue = obj1[i];
+            obj2PropertyValue = obj2[i];
+            result = areEqual(obj1PropertyValue, obj2PropertyValue);
+          }
+        } else if (isObject(obj1) && isObject(obj2)) {
+          var obj1Properties = Object.keys(obj1);
+          var obj2Properties = Object.keys(obj2);
+          // tests that these arrays have same lengths and same names
+          result = areEqual(obj1Properties, obj2Properties);
+
+          if (!result) {
+            return result;
+          }
+          // test that every property in both objects has same value
+          for (var j = 0; j < obj1Properties.length && result; j++) {
+            var obj1PropertyName = obj1Properties[j];
+            var obj2PropertyName = obj2Properties[j];
+            obj1PropertyValue = obj1[obj1PropertyName];
+            obj2PropertyValue = obj2[obj2PropertyName];
+            result = areEqual(obj1PropertyValue, obj2PropertyValue);
+          }
+        } else if (isFunction(obj1) && isFunction(obj2)) {
+          result = obj1.toString() === obj2.toString();
+        } else {
+          // this tests string, number, boolean, null and undefined
+          result = obj1 === obj2;
+        }
+
+        return result;
+      }
+
+    });
+  </script>
+  </body>
+</html>

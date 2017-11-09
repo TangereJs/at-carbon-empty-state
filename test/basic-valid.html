@@ -1,0 +1,253 @@
+<!doctype html>
+<html>
+  <head>
+  <meta charset="UTF-8">
+  <title>at-carbon-empty-state tests</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+  <script src="../../web-component-tester/browser.js"></script>
+  <link rel="import" href="../at-carbon-empty-state.html">
+  <link rel="import" href="../../iron-test-helpers/iron-test-helpers.html" />
+  </head>
+  <body>
+    <test-fixture id="iconNotset_htmlNotset">
+      <template>
+        <at-carbon-empty-state icon="now:about" html="<div>lorem ipsum</div>"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconNotset_html<div><div>lorem ipsum</div><div>lorem ipsum</div></div>">
+      <template>
+        <at-carbon-empty-state icon="now:about" html="<div><div>lorem ipsum</div><div>lorem ipsum</div></div>"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconNotset_html<div><span>lorem ipsum</span><span>ipsum lorem</span></div>">
+      <template>
+        <at-carbon-empty-state icon="now:about" html="<div><span>lorem ipsum</span><span>ipsum lorem</span></div>"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconNow:about-filled_htmlNotset">
+      <template>
+        <at-carbon-empty-state icon="now:about-filled" html="<div>lorem ipsum</div>"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconNow:about-filled_html<div><div>lorem ipsum</div><div>lorem ipsum</div></div>">
+      <template>
+        <at-carbon-empty-state icon="now:about-filled" html="<div><div>lorem ipsum</div><div>lorem ipsum</div></div>"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconNow:about-filled_html<div><span>lorem ipsum</span><span>ipsum lorem</span></div>">
+      <template>
+        <at-carbon-empty-state icon="now:about-filled" html="<div><span>lorem ipsum</span><span>ipsum lorem</span></div>"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconNow:arrow-down_htmlNotset">
+      <template>
+        <at-carbon-empty-state icon="now:arrow-down" html="<div>lorem ipsum</div>"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconNow:arrow-down_html<div><div>lorem ipsum</div><div>lorem ipsum</div></div>">
+      <template>
+        <at-carbon-empty-state icon="now:arrow-down" html="<div><div>lorem ipsum</div><div>lorem ipsum</div></div>"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconNow:arrow-down_html<div><span>lorem ipsum</span><span>ipsum lorem</span></div>">
+      <template>
+        <at-carbon-empty-state icon="now:arrow-down" html="<div><span>lorem ipsum</span><span>ipsum lorem</span></div>"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconNow:arrow-left_htmlNotset">
+      <template>
+        <at-carbon-empty-state icon="now:arrow-left" html="<div>lorem ipsum</div>"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconNow:arrow-left_html<div><div>lorem ipsum</div><div>lorem ipsum</div></div>">
+      <template>
+        <at-carbon-empty-state icon="now:arrow-left" html="<div><div>lorem ipsum</div><div>lorem ipsum</div></div>"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconNow:arrow-left_html<div><span>lorem ipsum</span><span>ipsum lorem</span></div>">
+      <template>
+        <at-carbon-empty-state icon="now:arrow-left" html="<div><span>lorem ipsum</span><span>ipsum lorem</span></div>"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconNow:arrow-right_htmlNotset">
+      <template>
+        <at-carbon-empty-state icon="now:arrow-right" html="<div>lorem ipsum</div>"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconNow:arrow-right_html<div><div>lorem ipsum</div><div>lorem ipsum</div></div>">
+      <template>
+        <at-carbon-empty-state icon="now:arrow-right" html="<div><div>lorem ipsum</div><div>lorem ipsum</div></div>"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconNow:arrow-right_html<div><span>lorem ipsum</span><span>ipsum lorem</span></div>">
+      <template>
+        <at-carbon-empty-state icon="now:arrow-right" html="<div><span>lorem ipsum</span><span>ipsum lorem</span></div>"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconNow:arrow-up_htmlNotset">
+      <template>
+        <at-carbon-empty-state icon="now:arrow-up" html="<div>lorem ipsum</div>"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconNow:arrow-up_html<div><div>lorem ipsum</div><div>lorem ipsum</div></div>">
+      <template>
+        <at-carbon-empty-state icon="now:arrow-up" html="<div><div>lorem ipsum</div><div>lorem ipsum</div></div>"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+    <test-fixture id="iconNow:arrow-up_html<div><span>lorem ipsum</span><span>ipsum lorem</span></div>">
+      <template>
+        <at-carbon-empty-state icon="now:arrow-up" html="<div><span>lorem ipsum</span><span>ipsum lorem</span></div>"></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+  <script>
+    suite("basic", function() { 
+      suite("tests where properties are set as attributes", function() { 
+      
+        test("iconNotset_htmlNotset", function() { 
+          var elt = fixture("iconNotset_htmlNotset");
+          assert.equal(elt.icon, "now:about");
+          assert.equal(elt.html, "<div>lorem ipsum</div>");
+        });
+        
+        test("iconNotset_html<div><div>lorem ipsum</div><div>lorem ipsum</div></div>", function() { 
+          var elt = fixture("iconNotset_html<div><div>lorem ipsum</div><div>lorem ipsum</div></div>");
+          assert.equal(elt.icon, "now:about");
+          assert.equal(elt.html, "<div><div>lorem ipsum</div><div>lorem ipsum</div></div>");
+        });
+        
+        test("iconNotset_html<div><span>lorem ipsum</span><span>ipsum lorem</span></div>", function() { 
+          var elt = fixture("iconNotset_html<div><span>lorem ipsum</span><span>ipsum lorem</span></div>");
+          assert.equal(elt.icon, "now:about");
+          assert.equal(elt.html, "<div><span>lorem ipsum</span><span>ipsum lorem</span></div>");
+        });
+        
+        test("iconNow:about-filled_htmlNotset", function() { 
+          var elt = fixture("iconNow:about-filled_htmlNotset");
+          assert.equal(elt.icon, "now:about-filled");
+          assert.equal(elt.html, "<div>lorem ipsum</div>");
+        });
+        
+        test("iconNow:about-filled_html<div><div>lorem ipsum</div><div>lorem ipsum</div></div>", function() { 
+          var elt = fixture("iconNow:about-filled_html<div><div>lorem ipsum</div><div>lorem ipsum</div></div>");
+          assert.equal(elt.icon, "now:about-filled");
+          assert.equal(elt.html, "<div><div>lorem ipsum</div><div>lorem ipsum</div></div>");
+        });
+        
+        test("iconNow:about-filled_html<div><span>lorem ipsum</span><span>ipsum lorem</span></div>", function() { 
+          var elt = fixture("iconNow:about-filled_html<div><span>lorem ipsum</span><span>ipsum lorem</span></div>");
+          assert.equal(elt.icon, "now:about-filled");
+          assert.equal(elt.html, "<div><span>lorem ipsum</span><span>ipsum lorem</span></div>");
+        });
+        
+        test("iconNow:arrow-down_htmlNotset", function() { 
+          var elt = fixture("iconNow:arrow-down_htmlNotset");
+          assert.equal(elt.icon, "now:arrow-down");
+          assert.equal(elt.html, "<div>lorem ipsum</div>");
+        });
+        
+        test("iconNow:arrow-down_html<div><div>lorem ipsum</div><div>lorem ipsum</div></div>", function() { 
+          var elt = fixture("iconNow:arrow-down_html<div><div>lorem ipsum</div><div>lorem ipsum</div></div>");
+          assert.equal(elt.icon, "now:arrow-down");
+          assert.equal(elt.html, "<div><div>lorem ipsum</div><div>lorem ipsum</div></div>");
+        });
+        
+        test("iconNow:arrow-down_html<div><span>lorem ipsum</span><span>ipsum lorem</span></div>", function() { 
+          var elt = fixture("iconNow:arrow-down_html<div><span>lorem ipsum</span><span>ipsum lorem</span></div>");
+          assert.equal(elt.icon, "now:arrow-down");
+          assert.equal(elt.html, "<div><span>lorem ipsum</span><span>ipsum lorem</span></div>");
+        });
+        
+        test("iconNow:arrow-left_htmlNotset", function() { 
+          var elt = fixture("iconNow:arrow-left_htmlNotset");
+          assert.equal(elt.icon, "now:arrow-left");
+          assert.equal(elt.html, "<div>lorem ipsum</div>");
+        });
+        
+        test("iconNow:arrow-left_html<div><div>lorem ipsum</div><div>lorem ipsum</div></div>", function() { 
+          var elt = fixture("iconNow:arrow-left_html<div><div>lorem ipsum</div><div>lorem ipsum</div></div>");
+          assert.equal(elt.icon, "now:arrow-left");
+          assert.equal(elt.html, "<div><div>lorem ipsum</div><div>lorem ipsum</div></div>");
+        });
+        
+        test("iconNow:arrow-left_html<div><span>lorem ipsum</span><span>ipsum lorem</span></div>", function() { 
+          var elt = fixture("iconNow:arrow-left_html<div><span>lorem ipsum</span><span>ipsum lorem</span></div>");
+          assert.equal(elt.icon, "now:arrow-left");
+          assert.equal(elt.html, "<div><span>lorem ipsum</span><span>ipsum lorem</span></div>");
+        });
+        
+        test("iconNow:arrow-right_htmlNotset", function() { 
+          var elt = fixture("iconNow:arrow-right_htmlNotset");
+          assert.equal(elt.icon, "now:arrow-right");
+          assert.equal(elt.html, "<div>lorem ipsum</div>");
+        });
+        
+        test("iconNow:arrow-right_html<div><div>lorem ipsum</div><div>lorem ipsum</div></div>", function() { 
+          var elt = fixture("iconNow:arrow-right_html<div><div>lorem ipsum</div><div>lorem ipsum</div></div>");
+          assert.equal(elt.icon, "now:arrow-right");
+          assert.equal(elt.html, "<div><div>lorem ipsum</div><div>lorem ipsum</div></div>");
+        });
+        
+        test("iconNow:arrow-right_html<div><span>lorem ipsum</span><span>ipsum lorem</span></div>", function() { 
+          var elt = fixture("iconNow:arrow-right_html<div><span>lorem ipsum</span><span>ipsum lorem</span></div>");
+          assert.equal(elt.icon, "now:arrow-right");
+          assert.equal(elt.html, "<div><span>lorem ipsum</span><span>ipsum lorem</span></div>");
+        });
+        
+        test("iconNow:arrow-up_htmlNotset", function() { 
+          var elt = fixture("iconNow:arrow-up_htmlNotset");
+          assert.equal(elt.icon, "now:arrow-up");
+          assert.equal(elt.html, "<div>lorem ipsum</div>");
+        });
+        
+        test("iconNow:arrow-up_html<div><div>lorem ipsum</div><div>lorem ipsum</div></div>", function() { 
+          var elt = fixture("iconNow:arrow-up_html<div><div>lorem ipsum</div><div>lorem ipsum</div></div>");
+          assert.equal(elt.icon, "now:arrow-up");
+          assert.equal(elt.html, "<div><div>lorem ipsum</div><div>lorem ipsum</div></div>");
+        });
+        
+        test("iconNow:arrow-up_html<div><span>lorem ipsum</span><span>ipsum lorem</span></div>", function() { 
+          var elt = fixture("iconNow:arrow-up_html<div><span>lorem ipsum</span><span>ipsum lorem</span></div>");
+          assert.equal(elt.icon, "now:arrow-up");
+          assert.equal(elt.html, "<div><span>lorem ipsum</span><span>ipsum lorem</span></div>");
+        });
+        
+      });
+      suite("tests where properties are set as in code", function() { 
+
+        test("valid values test", function() { 
+          var elt = fixture("iconNotset_htmlNotset");
+          
+          var actIconValues = 
+            [ "now:about", "now:about-filled", "now:arrow-down", "now:arrow-left", "now:arrow-right", "now:arrow-up" ];
+          var actHtmlValues = 
+            [ "<div>lorem ipsum</div>", "<div><div>lorem ipsum</div><div>lorem ipsum</div></div>", "<div><span>lorem ipsum</span><span>ipsum lorem</span></div>" ];
+
+          var expIconValues = 
+            [ "now:about", "now:about-filled", "now:arrow-down", "now:arrow-left", "now:arrow-right", "now:arrow-up" ];
+          var expHtmlValues = 
+            [ "<div>lorem ipsum</div>", "<div><div>lorem ipsum</div><div>lorem ipsum</div></div>", "<div><span>lorem ipsum</span><span>ipsum lorem</span></div>" ];
+
+          for (var i = 0; i < actIconValues.length; i++) {
+            var actIconValue = actIconValues[i];
+            for (var j = 0; j < actHtmlValues.length; j++) {
+              var actHtmlValue = actHtmlValues[j];
+
+              elt.icon = actIconValue;
+              elt.html = actHtmlValue;
+
+              var expIconValue = expIconValues[i];
+              var expHtmlValue = expHtmlValues[j];
+
+              assert.equal(elt.icon, expIconValue);
+              assert.equal(elt.html, expHtmlValue);
+            }
+          }
+
+        });
+
+      });
+    });
+  </script>
+  </body>
+</html>
