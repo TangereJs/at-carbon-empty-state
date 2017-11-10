@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+  <head>
+  <meta charset="UTF-8">
+  <title>at-carbon-empty-state tests</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+  <script src="../../web-component-tester/browser.js"></script>
+  <link rel="import" href="../at-carbon-empty-state.html">
+  <link rel="import" href="../../iron-test-helpers/iron-test-helpers.html" />
+  </head>
+  <body>
+    <test-fixture id="propertyTest">
+      <template>
+        <at-carbon-empty-state></at-carbon-empty-state>
+      </template>
+    </test-fixture>
+
+  <script>
+    suite("ui interaction tests", function() { 
+      
+      var initialIconValue = 'now:error';
+      var intiialHtmlValue = '';
+
+      function getDisplayPropertyValue(elt) {
+        var computedStyle = window.getComputedStyle(elt);
+        var propertyValue = computedStyle.getPropertyValue('display');
+        return propertyValue;
+      }
+
+      function assertDisplayValue(elt, value) {
+        var dpVal = getDisplayPropertyValue(elt);
+        assert.equal(dpVal, value);
+      }
+
+      function assertHasClass(elt, className, expValue) {
+        var hasClass = Polymer.dom(elt).classList.contains(className);
+        assert.equal(hasClass, expValue);
+      }
+
+      function assertInitialState(elt) {
+        assert.equal(elt.icon, initialIconValue);
+        assert.equal(elt.html, intiialHtmlValue);
+
+        assertHasClass(elt.$.msg, 'hide', true);
+        assertDisplayValue(elt.$.msg, 'none');
+      }
+
+      test("test 1", function() { 
+        
+        var elt = fixture("propertyTest");
+        
+        assertInitialState(elt);
+
+        // setting a different icon changes the icon
+        var newIcon = "now:about";
+        elt.icon = newIcon;
+        assert.equal(elt.icon, newIcon);
+        assert.equal(elt.$.icon.icon, newIcon);
+
+        assertHasClass(elt.$.msg, 'hide', true);
+        assertDisplayValue(elt.$.msg, 'none');
+
+        // setting the html shows the message
+        var newHtml = 'Lorem ipsum';
+        elt.html = newHtml;
+        
+        // assert that html is set correctly
+        assert.equal(elt.html, newHtml);
+        assert.equal(Polymer.dom(elt.$.msg).innerHTML, newHtml);
+
+        // assert that hide class is removed
+        assertHasClass(elt.$.msg, 'hide', false);
+        assertDisplayValue(elt.$.msg, 'block');
+
+        // assert that icon is not changed
+        assert.equal(elt.icon, newIcon);
+        assert.equal(elt.$.icon.icon, newIcon);
+
+      });
+
+      test("test 2", function() { 
+        
+        var elt = fixture("propertyTest");
+        
+        assertInitialState(elt);
+
+        // setting the html shows the message
+        var newHtml = 'Lorem ipsum';
+        elt.html = newHtml;
+        
+        // assert that html is set correctly
+        assert.equal(elt.html, newHtml);
+        assert.equal(Polymer.dom(elt.$.msg).innerHTML, newHtml);
+
+        // assert that hide class is removed
+        assertHasClass(elt.$.msg, 'hide', false);
+        assertDisplayValue(elt.$.msg, 'block');
+
+        // setting a different icon changes the icon
+        var newIcon = "now:about";
+        elt.icon = newIcon;
+        assert.equal(elt.icon, newIcon);
+        assert.equal(elt.$.icon.icon, newIcon);
+
+        // assert that html is not changed
+        assert.equal(elt.html, newHtml);
+        assert.equal(Polymer.dom(elt.$.msg).innerHTML, newHtml);
+
+        assertHasClass(elt.$.msg, 'hide', false);
+        assertDisplayValue(elt.$.msg, 'block');
+
+      });
+
+    });
+  </script>
+  </body>
+</html>

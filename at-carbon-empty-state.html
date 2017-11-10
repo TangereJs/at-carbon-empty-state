@@ -10,7 +10,7 @@
         display: block;
       }
 
-      .hide {
+      #msg.hide {
         display: none;
       }
 
@@ -38,7 +38,7 @@
     </style>
     
     <div id="container">
-      <at-carbon-icon id="icon" icon="{{icon}}"></at-carbon-icon>
+      <at-carbon-icon id="icon" icon="[[icon]]"></at-carbon-icon>
       <div id="msg"></div>
     </div>
   </template>
@@ -56,40 +56,30 @@
       html: {
         type: String,
         value: "",
-        observer: 'htmlChanged'
+        observer: '_htmlChanged'
       }
     },
-    htmlChanged: function () {
-      this.render();
+
+    _htmlChanged: function () {
+      this._render();
     },
+
     ready: function () {
-      this.render();
+      this._render();
     },
-    render: function () {
+    
+    _render: function () {
 
       // get innerHTML from lightDom
       var msg = this._nodesInnerHTML(Polymer.dom(this).childNodes).trim();
 
       if (!!this.html) msg = this.html;
 
-      var container = this.$.msg;
-      container.innerHTML = msg;
-
-      var cl = this.type;
-
-      // hide container if empty
-      if (!msg) cl = "hide";
-
-      if (this._cl !== undefined) {
-        Polymer.dom(this.$.msg).classList.toggle(this._cl, false);
-      }
-
-      Polymer.dom(this.$.msg).classList.toggle(cl, true);
-      this._cl = cl;
+      Polymer.dom(this.$.msg).innerHTML = msg;
+      
+      this.toggleClass('hide', !msg, this.$.msg);
     },
-    ready: function () {
 
-    },
     _nodesInnerHTML: function (nodes) {
       // generates combined innerHTML of an array of nodes
       var html = "";
@@ -106,7 +96,6 @@
 
       return html;
     }
-
 
   });
 </script>
